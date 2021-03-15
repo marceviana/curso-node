@@ -1,5 +1,7 @@
 // Marcelo y German
 
+const exit = process.exit;
+
 const genUsuario = require('../../lovewoman/clase1/lib/generarUsuario')
 const asyncForLoop = require('../../lovewoman/clase1/lib/asyncforloop')
 const _ = require('underscore')
@@ -24,6 +26,7 @@ const writeDocs = () => {
     }, 
     ()=>{
         console.log('finalizo el proceso')
+        exit()
     })
 }
 
@@ -39,14 +42,15 @@ const readDocs = () => {
             console.log(data);
           });
         });
+        setTimeout(() => {
+            exit()            
+        }, 2000 );
     });
     
 }
 
-// writeDocs()
-// readDocs()
+ writeDocs()
+ readDocs()
 
-console.log({env: process.env})
-console.log({mainModule: process.mainModule.path })
-
-process.exit()
+// console.log({env: process.env})
+// console.log({mainModule: process.mainModule.path })
