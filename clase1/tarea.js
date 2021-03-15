@@ -1,7 +1,7 @@
 // Marcelo y German
 
-const genUsuario = require('../lovewoman/clase1/lib/generarUsuario')
-const asyncForLoop = require('../lovewoman/clase1/lib/asyncforloop')
+const genUsuario = require('../../lovewoman/clase1/lib/generarUsuario')
+const asyncForLoop = require('../../lovewoman/clase1/lib/asyncforloop')
 const _ = require('underscore')
 const fs = require('fs')
 
