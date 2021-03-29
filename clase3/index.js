@@ -33,7 +33,7 @@ const obj = {
 // .paso1()
 
 const promesa = (a,b) =>new Promise((resolve,reject)=>{
-    setTimeout(resolve, 2000, a+b);
+    setTimeout(resolve, 3000, a+b);
 })
 
-promesa(1,2).then(result=>console.log('result',result))
+promesa(2,3).then(r=>console.log(`el resultado es: ${r}`))
