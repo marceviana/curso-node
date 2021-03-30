@@ -9,3 +9,7 @@ const promesa = (a,b) =>new Promise((resolve,reject)=>{
 promesa(2,3)
 .then(r=>console.log(`el resultado es: ${r}`))
 .catch(err=>console.log(`Ocurrió un error: ${err}`))
+
+for (let i = 0; i < 10; i++) {
+    console.log(await promesa(i,3))    
+}
